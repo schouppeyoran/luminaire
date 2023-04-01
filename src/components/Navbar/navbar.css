@@ -1,1 +1,99 @@
 /* ================ NAVBAR ================ */
+.app__navbar {
+    z-index: 10;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.app__navbar-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app__navbar-logo {
+    width: 200px;
+}
+
+.app__navbar-menu {
+    position: relative;
+}
+
+.app__navbar-menu svg {
+    font-size: 40px;
+    color: var(--color-chineseBlack);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.app__navbar-menu svg:hover {
+    transform: scale(120%) translateX(-10%) translateY(10%);
+}
+
+.scale-in-top {
+	-webkit-animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+}
+
+.app__navbar-links-container {
+    position: absolute;
+    right: 0;
+}
+
+.app__navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 12rem;
+    text-shadow: 2px 2px 2px var(--color-chineseBlack);
+}
+
+.app__navbar-links li {
+    margin-bottom: 2px;
+    width: fit-content;
+}
+
+.app__navbar-links li:hover {
+    margin-bottom: 0px;
+    border-bottom: 2px solid var(--color-chineseBlack);
+}

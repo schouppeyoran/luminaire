@@ -5,7 +5,7 @@ import {Navbar, Hero, Footer} from './components';
 const App = () => {
     return (
         <>
-            {/* <Navbar/> */}
+            <Navbar/>
             <Hero/>
             <Footer/>
         </>
