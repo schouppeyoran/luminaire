@@ -34,6 +34,7 @@
   --color-subtext: ;
   --color-primary: ;
   --color-primary-light: ;
+  --color-bg-gradient: linear-gradient(96.92deg, #85A2B9 2.95%, rgba(133, 162, 185, 0) 139.05%);
 
   /* EVENTUAL MISCELLANEOUS COLORS */
   --color-white: #fff;
@@ -108,8 +109,13 @@ h3 {
 }
 
 h4 {
+  font-family: 'Test Sohne Mono Kraftig';
   font-size: 24px;
   line-height: 34px;
+}
+
+h5 {
+  font-family: sans-serif;
 }
 
 section {

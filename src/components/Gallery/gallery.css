@@ -1,0 +1,123 @@
+.app__gallery {
+    background: var(--color-bg-gradient);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    color: var(--color-chineseBlack);
+}
+
+.app__gallery-heading {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.app__gallery-heading img {
+    height: 3vh;
+    width: auto;
+}
+
+.app__gallery-heading h1 {
+    text-transform: uppercase;
+    width: 60%;
+    text-align: center;
+}
+
+.app__gallery-items {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.app__gallery-items-left,
+.app__gallery-items-right,
+.app__gallery-items-center {
+    position: relative;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__gallery-button-left,
+.app__gallery-button-right {
+    position: absolute;
+    padding: 0.7rem 0.8rem;
+    color: var(--color-chineseBlack);
+    background: var(--color-maximumYellow);
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.app__gallery-button-left {
+    left: -3vw;
+}
+
+.app__gallery-button-right {
+    right: -3vw;
+}
+
+.app__gallery-items-center-description {
+    padding: 2rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__gallery-items-center-description h3 {
+    width: 30%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 0.5rem;
+}
+
+.app__gallery-items-center-description-properties {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app__gallery-items-center-description-property {
+    position: relative;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.app__gallery-items-center-description-property h4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.app__gallery-items-center-description-property h5 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.app__gallery-items-center-description-property::before {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-chineseBlack);
+    opacity: 0.4;
+}
