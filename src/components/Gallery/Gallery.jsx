@@ -43,12 +43,20 @@ const galleryItems = [
             images.rivianPickup3,
             images.rivianPickup4,
         ],
-        property1: 'Property 1',
-        value1: 'Value 1',
-        property2: 'Property 2',
-        value2: 'Value 2',
-        property3: 'Carrying capacity',
-        value3: '25 Schmeckels'
+        properties : [
+            {
+                property: 'Property 1',
+                value: 'Value 1'
+            },
+            {
+                property: 'Property 2',
+                value: 'Value 2'
+            },
+            {
+                property: 'Carrying capacity',
+                value: '25 Schmeckels'
+            }
+        ]
     },
     {
         name: 'Polestar Coupe',
@@ -57,19 +65,42 @@ const galleryItems = [
             images.polestarCoupe2,
             images.polestarCoupe3,
         ],
-        property1: 'Property 1',
-        value1: 'Value 1',
-        property2: 'Property 2',
-        value2: 'Value 2',
-        property3: 'Property 3',
-        value3: 'Value 3'
+        properties : [
+            {
+                property: 'Property 1',
+                value: 'Value 1'
+            },
+            {
+                property: 'Property 2',
+                value: 'Value 2'
+            },
+            {
+                property: 'Property 3',
+                value: 'Value 3'
+            }
+        ]
     },
 ]
 
 const Gallery = () => {
-    let leftIndex = galleryItems.length - 1;
-    let centerIndex = 0;
-    let rightIndex = 1;
+    const [leftIndex, setLeftIndex] = useState(galleryItems.length - 1);
+    const [centerIndex, setCenterIndex] = useState(0);
+    const [rightIndex, setRightIndex] = useState(1);
+
+    function handleLeftClick() {
+        const newIndex = (centerIndex + 1) % galleryItems.length;
+        setLeftIndex(centerIndex);
+        setCenterIndex(newIndex);
+        setRightIndex((newIndex + 1) % galleryItems.length);
+    }
+
+    function handleRightClick() {
+        const newIndex = (centerIndex - 1 + galleryItems.length) % galleryItems.length;
+        setRightIndex(centerIndex);
+        setCenterIndex(newIndex);
+        setLeftIndex((newIndex - 1 + galleryItems.length) % galleryItems.length);
+    }
+    
 
     return (
     <section id='gallery' className='app__gallery'>
@@ -84,8 +115,8 @@ const Gallery = () => {
                 <img src={galleryItems[leftIndex].colorways[0]} alt="" />
             </div>
             <div className="app__gallery-items-center">
-                <a className='app__gallery-button-left'><AiOutlineArrowLeft/></a>
-                <a className='app__gallery-button-right'><AiOutlineArrowRight/></a>
+                <a className='app__gallery-button-left' onClick={handleLeftClick}><AiOutlineArrowLeft/></a>
+                <a className='app__gallery-button-right' onClick={handleRightClick}><AiOutlineArrowRight/></a>
                 <img src={galleryItems[centerIndex].colorways[0]} alt="" />
                 <div className="app__gallery-items-center-description">
                     <h3>{galleryItems[centerIndex].name}</h3>
