@@ -18,13 +18,13 @@ import rivianPickup2 from '../assets/rivianPickup2.png';
 import rivianPickup3 from '../assets/rivianPickup3.png';
 import rivianPickup4 from '../assets/rivianPickup4.png';
 
-import polestarCoupe1 from '../assets/polestarCoupe1.jpg';
-import polestarCoupe2 from '../assets/polestarCoupe2.jpg';
-import polestarCoupe3 from '../assets/polestarCoupe3.jpg';
+import polestarCoupe1 from '../assets/polestarCoupe1.png';
+import polestarCoupe2 from '../assets/polestarCoupe2.png';
+import polestarCoupe3 from '../assets/polestarCoupe3.png';
 
-import polestarHatch1 from '../assets/polestarHatch1.jpg';
-import polestarHatch2 from '../assets/polestarHatch2.jpg';
-import polestarHatch3 from '../assets/polestarHatch3.jpg';
+import polestarHatch1 from '../assets/polestarHatch1.png';
+import polestarHatch2 from '../assets/polestarHatch2.png';
+import polestarHatch3 from '../assets/polestarHatch3.png';
 
 import faraday1 from '../assets/faraday1.png';
 import faraday2 from '../assets/faraday2.png';

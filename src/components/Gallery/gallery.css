@@ -51,6 +51,7 @@
 .app__gallery-items-right img {
     position: absolute;
     bottom: -10%;
+    transition: 2s ease-in;
 }
 
 .app__gallery-button-left,
@@ -130,3 +131,45 @@
     background-color: var(--color-chineseBlack);
     opacity: 0.4;
 }
+
+.--slide-left {
+    animation: strafe-left 2s ease-in-out;
+  }
+  
+  .--slide-right {
+    animation: strafe-right 2s ease-in-out;
+  }
+
+  .--slide-up-name {
+    animation: strafe-up 1  2s   ;
+  }
+
+  @keyframes strafe-left {
+    0% {
+        transform: translateX(70vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes strafe-right {
+    0% {
+        transform: translateX(-70vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes strafe-up {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+  }
