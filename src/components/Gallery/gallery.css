@@ -7,6 +7,7 @@
     overflow: hidden;
     color: var(--color-chineseBlack);
     user-select: none;
+    position: relative;
 }
 
 .app__gallery-heading {
@@ -16,6 +17,7 @@
     align-items: center;
     gap: 2rem;
     margin-top: 3rem;
+    z-index: 3;
 }
 
 .app__gallery-heading img {
@@ -64,6 +66,7 @@
     font-size: 20px;
     top: 40%;
     z-index: 10;
+    cursor: pointer;
 }
 
 .app__gallery-button-left {
@@ -133,15 +136,21 @@
 }
 
 .--slide-left {
-    animation: strafe-left 2s ease-in-out;
+    animation: strafe-left 1.4s ease-in-out;
   }
   
   .--slide-right {
-    animation: strafe-right 2s ease-in-out;
+    animation: strafe-right 1.4s ease-in-out;
   }
 
   .--slide-up-name {
-    animation: strafe-up 1  2s   ;
+    animation: strafe-up-name 1.4s ease-in-out;
+    animation-delay: 0;
+  }
+
+  .--slide-up-properties {
+    animation: strafe-up-properties 1.4s ease-in-out;
+    animation-delay: 0;
   }
 
   @keyframes strafe-left {
@@ -164,12 +173,71 @@
     }
   }
 
-  @keyframes strafe-up {
+  @keyframes strafe-up-properties {
     0% {
-        transform: translateY(100%);
+        transform: translateY(200%);
     }
 
     100% {
         transform: translateY(0);
     }
   }
+
+  @keyframes strafe-up-name {
+    0% {
+        transform: translateY(300%);
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+.app__gallery-bg-decorator {
+    position: absolute;
+    width: 55%;
+    height: auto;
+    right: 50%;
+    bottom: 0;
+    z-index: 0;
+}
+
+.app__gallery-decorator1 {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: var(--color-chineseBlack);
+    top: 0;
+    left: 5vw;
+    z-index: 0;
+    opacity: 0.15;
+}
+
+.app__gallery-decorator2 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--color-chineseBlack);
+    left: 0;
+    top: 5vw;
+    z-index: 0;
+    opacity: 0.15;
+}
+
+.app__gallery-decorator3 {
+    position: absolute;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    left: -1vw;
+    top: 10vw;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    opacity: 0.6;
+}

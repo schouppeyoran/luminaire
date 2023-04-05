@@ -132,18 +132,21 @@ const Gallery = () => {
         centerItemRef.current.classList.remove("--slide-left", "--slide-right");
         rightItemRef.current.classList.remove("--slide-left", "--slide-right");
         centerItemNameRef.current.classList.remove("--slide-up-name");
-        
+        centerItemPropertiesRef.current.classList.remove("--slide-up-properties");
 
-        centerItemNameRef.current.classList.add("--slide-up-name")
-        centerItemPropertiesRef.current.classList.add("--slide-up-properties")
+        
         if (slideDirection === "left") {
             leftItemRef.current.classList.add("--slide-left");
             centerItemRef.current.classList.add("--slide-left");
             rightItemRef.current.classList.add("--slide-left");
+            centerItemNameRef.current.classList.add("--slide-up-name");
+            centerItemPropertiesRef.current.classList.add("--slide-up-properties");
         } else if (slideDirection === "right") {
             leftItemRef.current.classList.add("--slide-right");
             centerItemRef.current.classList.add("--slide-right");
             rightItemRef.current.classList.add("--slide-right");
+            centerItemNameRef.current.classList.add("--slide-up-name");
+            centerItemPropertiesRef.current.classList.add("--slide-up-properties");
         }
     }, [slideDirection, leftIndex, centerIndex, rightIndex]);
 
@@ -167,7 +170,10 @@ const Gallery = () => {
     
     return (
     <section id='gallery' className='app__gallery'>
-
+        <img src={images.bgDots} alt="" className='app__gallery-bg-decorator' />
+        <div className="app__gallery-decorator1"/>
+        <div className="app__gallery-decorator2"/>
+        <h5 className='app__gallery-decorator3'>Pick your car</h5>
         <div className="app__gallery-heading">
             <img src={gallerySection.decorator} alt="" />
             <h1>{gallerySection.heading}</h1>
