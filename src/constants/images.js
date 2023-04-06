@@ -29,6 +29,10 @@ import polestarHatch3 from '../assets/polestarHatch3.png';
 import faraday1 from '../assets/faraday1.png';
 import faraday2 from '../assets/faraday2.png';
 
+import rivianPhoto17 from '../assets/rivianPhoto17.png';
+import rivianPhoto20 from '../assets/rivianPhoto20.png';
+import rivianPhoto21 from '../assets/rivianPhoto21.png';
+
 export default {
     logo,
 
@@ -60,4 +64,8 @@ export default {
 
     faraday1,
     faraday2,
+
+    rivianPhoto17,
+    rivianPhoto20,
+    rivianPhoto21,
 }

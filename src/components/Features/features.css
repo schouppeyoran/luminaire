@@ -1,0 +1,148 @@
+.app__features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    color: var(--color-chineseBlack);
+    width: 100%;
+}
+
+.app__features-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    text-align: center;
+}
+
+.app__features-heading img {
+    height: 3vh;
+    width: auto;
+}
+
+.app__features-heading h4,
+.app__features-heading h1 {
+    text-transform: uppercase;
+}
+
+.app__features-container {
+    width: 100%;
+}
+
+.app__features-container h4 {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.app__features-item-expandButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.app__features-item-expandButton a {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Test Sohne Breit Kraftig';
+    letter-spacing: 0.1em;
+}
+
+.app__features-item-expandButton a:hover {
+    color: var(--color-chineseBlack);
+}
+
+.app__features-item-expandButton svg {
+    background: var(--color-maximumYellow);
+    height: 3rem;
+    width: 3rem;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.app__features-item-expandButton svg:hover {
+    color: var(--color-white);
+    background: var(--color-chineseBlack);
+}
+
+/* ITEM 1 STYLING */
+.app__features-item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 2.4rem;
+}
+
+.app__features-item1 img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.app__features-item1-content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 1rem;
+}
+
+
+/* ITEM 2 STYLING */
+.app__features-item2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 45%;
+}
+
+.app__features-item2 img {
+    width: 125%;
+    transform: translateX(-25%);
+}
+
+.app__features-item2-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    padding: 0 2rem;
+}
+
+.app__features-item2-content h3 {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* ITEM 3 STYLING */
+.app__features-item3 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.app__features-item3-img {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.app__features-item3-img img {
+    height: 100%;
+    width: 200%;
+}
+
+.app__features-item3-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 30%;
+}
