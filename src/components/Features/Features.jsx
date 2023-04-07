@@ -53,26 +53,28 @@ const Features = () => {
         <h3>{featuresSection.description}</h3>
       </div>
       <div className="app__features-container">
-        <div className="app__features-item1">
-          <img src={featuresItems.item1.img} alt="" />
-          <div className='app__features-item1-content'>
-            <h4>{featuresItems.item1.title}</h4>
-            <h3>{featuresItems.item1.description}</h3>
-            <div className='app__features-item-expandButton'>
-              <a>{featuresItems.item1.expandText}</a>
-              <AiOutlineArrowRight/>
+        <div className='app__features-subContainer'>
+          <div className="app__features-item1">
+            <img src={featuresItems.item1.img} alt="" />
+            <div className='app__features-item1-content'>
+              <h4>{featuresItems.item1.title}</h4>
+              <h3>{featuresItems.item1.description}</h3>
+              <div className='app__features-item-expandButton'>
+                <a>{featuresItems.item1.expandText}</a>
+                <AiOutlineArrowRight/>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="app__features-item2">
-          <img src={featuresItems.item2.img} alt="" />
-          <div className='app__features-item2-content'>
-            <h4>{featuresItems.item2.title}</h4>
-            <div>
-              <h3>{featuresItems.item2.description}</h3>
-              <div className='app__features-item-expandButton'>
-                <a>{featuresItems.item2.expandText}</a>
-                <AiOutlineArrowRight/>
+          <div className="app__features-item2">
+            <img src={featuresItems.item2.img} alt="" />
+            <div className='app__features-item2-content'>
+              <h4>{featuresItems.item2.title}</h4>
+              <div>
+                <h3>{featuresItems.item2.description}</h3>
+                <div className='app__features-item-expandButton'>
+                  <a>{featuresItems.item2.expandText}</a>
+                  <AiOutlineArrowRight/>
+                </div>
               </div>
             </div>
           </div>
