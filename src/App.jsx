@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Navbar, Hero, Gallery, Footer, Features} from './components';
+import {Navbar, Hero, Gallery, Footer, Features, Blog} from './components';
 
 const App = () => {
     return (
@@ -9,6 +9,7 @@ const App = () => {
             <Hero/>
             <Gallery/>
             <Features/>
+            <Blog/>
             <Footer/>
         </>
     )

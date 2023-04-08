@@ -1,0 +1,29 @@
+.app__blog {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-chineseBlack);
+}
+
+.app__blog-sidebar {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4rem 1rem;
+}
+
+.app__blog-sidebar h4 {
+    transform: rotate(-90deg);
+}
+
+.app__blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+.app__blog-items {
+    display: flex;
+}
