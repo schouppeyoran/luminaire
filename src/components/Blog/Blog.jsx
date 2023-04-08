@@ -1,6 +1,7 @@
 import React from 'react';
 import './blog.css';
 import {AiOutlineRead} from 'react-icons/ai';
+import { BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill} from 'react-icons/bs';
 import { images } from '../../constants';
 
 const blogItems = [
@@ -61,6 +62,16 @@ const blogItems = [
 ]
 
 const Blog = () => {
+    const scrollLeft = () => {
+        const blogItems = document.querySelector('.app__blog-items');
+        blogItems.scrollLeft -= blogItems.offsetWidth * 0.3;
+    }
+    
+    const scrollRight = () => {
+        const blogItems = document.querySelector('.app__blog-items');
+        blogItems.scrollLeft += blogItems.offsetWidth * 0.3;
+    }
+
   return (
     <section id='blog' className='app__blog'>
         <div className="app__blog-sidebar">
@@ -69,6 +80,8 @@ const Blog = () => {
         <div className="app__blog-container">
             <h1>Stories behind the wheel</h1>
             <div className="app__blog-items">
+                <BsFillArrowLeftSquareFill className="app__blog-items-scroll-left" onClick={scrollLeft}/>
+                <BsFillArrowRightSquareFill className="app__blog-items-scroll-right" onClick={scrollRight}/>
                 {blogItems.map((item, index) => (
                     <div className="app__blog-item">
                         <div className="app__blog-item-img">
@@ -77,11 +90,11 @@ const Blog = () => {
                             <a href={item.link}><AiOutlineRead/></a>
                         </div>
                         <div className="app__blog-item-tags">
-                            <h3>{item.tag}</h3>
-                            <h3>{item.minutesToRead} min read</h3>
+                            <h1>{item.tag}</h1>
+                            <h1>{item.minutesToRead} min read</h1>
                         </div>
                         <div className="app__blog-item-content">
-                            <h2>{item.title}</h2>
+                            <h4>{item.title}</h4>
                             <p>{item.description}</p>
                         </div>
                     </div>
