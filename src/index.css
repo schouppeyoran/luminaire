@@ -193,6 +193,26 @@ img {
   section > h2 {
       margin-bottom: 2rem;
   }
+
+  h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  
+
+  section {
+    padding-top: 2rem;
+  }
 }
 
 

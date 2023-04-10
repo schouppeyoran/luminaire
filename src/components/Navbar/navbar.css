@@ -97,3 +97,13 @@
     margin-bottom: 0px;
     border-bottom: 2px solid var(--color-chineseBlack);
 }
+
+@media screen and (max-width: 650px) {
+    .app__navbar-logo {
+        width: 150px;
+    }
+
+    .app__navbar-menu svg {
+        font-size: 30px;
+    }
+}

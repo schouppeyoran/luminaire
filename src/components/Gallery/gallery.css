@@ -324,3 +324,50 @@
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .app__gallery {
+        padding-top: 2rem;
+    }
+
+    .app__gallery-items-center img, 
+    .app__gallery-items-left img, 
+    .app__gallery-items-right img {
+        bottom: 25%;
+    }
+
+    .app__gallery-items-left, 
+    .app__gallery-items-right, 
+    .app__gallery-items-center {
+        width: 85vw;
+    }
+
+    .app__gallery-button-left {
+        left: -6vw;
+    }
+
+    .app__gallery-button-right {
+        right: -6vw;
+    }
+
+    .app__gallery-decorator1 {
+        left: 3vh;
+    }
+
+    .app__gallery-decorator2 {
+        top: 3vh;
+    }
+
+    .app__gallery-decorator3 {
+        top: 10vh;
+        left: -8%;
+        font-size: 12px;
+    }
+
+    .app__gallery-items-center-description-property h4,
+    .app__gallery-items-center-description-property h5 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
