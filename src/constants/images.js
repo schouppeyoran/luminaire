@@ -1,4 +1,5 @@
 import logo from '../assets/logo.png';
+import logoBlack from '../assets/logoBlack.png';
 
 import heroVideo from '../assets/heroVideo.mp4';
 
@@ -47,6 +48,7 @@ import rivianPhoto21 from '../assets/rivianPhoto21.png';
 
 export default {
     logo,
+    logoBlack,
 
     heroVideo,
 

@@ -59,6 +59,33 @@ const blogItems = [
         imgForeground: images.rivianPhoto19,
         link: '#blog'
     },
+    {
+        tag: 'placeholder',
+        minutesToRead: '1',
+        title: 'This is a placeholder article',
+        description: "The figma design only provided me with 3 articles but I need more than 3 to develop the scrolling functionality of this component.",
+        imgBackground: images.rivianPhoto11,
+        imgForeground: images.rivianPhoto12,
+        link: '#blog'
+    },
+    {
+        tag: 'placeholder',
+        minutesToRead: '1',
+        title: 'This is a placeholder article',
+        description: 'The figma design only provided me with 3 articles but I need more than 3 to develop the scrolling functionality of this component.',
+        imgBackground: images.rivianPhoto13,
+        imgForeground: images.rivianPhoto15,
+        link: '#blog'
+    },
+    {
+        tag: 'placeholder',
+        minutesToRead: '1',
+        title: 'This is a placeholder article',
+        description: 'The figma design only provided me with 3 articles but I need more than 3 to develop the scrolling functionality of this component.',
+        imgBackground: images.rivianPhoto16,
+        imgForeground: images.rivianPhoto19,
+        link: '#blog'
+    },
 ]
 
 const Blog = () => {
