@@ -215,4 +215,8 @@
         align-items: center;
         justify-content: center;
     }
+
+    .app__footer-disclaimer {
+        text-align: center;
+    }
 }
