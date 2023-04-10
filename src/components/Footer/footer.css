@@ -145,3 +145,9 @@
 .app__footer-disclaimer a {
     text-decoration: underline;
 }
+
+@media screen and (min-width: 2000px) {
+    .app__footer-newsletter {
+        padding: 0;
+    }
+}

@@ -154,3 +154,32 @@
     gap: 2rem;
     width: 30%;
 }
+
+@media screen and (min-width: 3000px) {
+    .app__features-subContainer {
+        gap: 16%;
+    }
+
+    .app__features-item1 {
+        width: 42%;
+    }
+
+    .app__features-item2 {
+        width: 38%;
+    }
+}
+
+
+@media screen and (min-width: 2000px) {
+    .app__features-subContainer {
+        gap: 4rem;
+    }
+
+    .app__features-item1 {
+        width: calc(50% - 2rem);
+    }
+
+    .app__features-item2 {
+        width: calc(45% - 2rem);
+    }
+}

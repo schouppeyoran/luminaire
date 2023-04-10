@@ -241,3 +241,29 @@
     font-weight: 700;
     opacity: 0.6;
 }
+
+@media screen and (min-width: 3000px) {
+    .app__gallery-items-center img,
+    .app__gallery-items-left img,
+    .app__gallery-items-right img {
+        bottom: -25%;
+    }
+
+    .app__gallery-items-center-description h3 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .app__gallery-items-center-description-property h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .app__gallery-decorator1 {
+        left: 3vw;
+    }
+
+    .app__gallery-decorator2 {
+        top: 3vw;
+    }
+}

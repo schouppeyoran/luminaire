@@ -110,3 +110,18 @@
     width: auto;
     z-index: -1;
 }
+
+@media screen and (min-width: 3000px) {
+    .app__hero-right-backdrop {
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .app__hero-left {
+        padding-left: 8rem;
+    }
+
+    .app__hero-right {
+        padding-right: 8rem;
+    }
+}
