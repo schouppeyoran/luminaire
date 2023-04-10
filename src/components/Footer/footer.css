@@ -1,1 +1,82 @@
 /* ================ FOOTER ================ */
+.app__footer {
+    background: var(--color-bg-gradient);
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.app__footer-newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 6rem 0;
+}
+
+.app__footer-newsletter-img-left,
+.app__footer-newsletter-img-right {
+    width: 25%;
+}
+
+.app__footer-newsletter-img-left img,
+.app__footer-newsletter-img-right img {
+    width: 200%;
+}
+
+.app__footer-newsletter-img-left {
+    transform: translateX(-100%);
+}
+
+.app__footer-newsletter-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    color: var(--color-chineseBlack);
+}
+
+.app__footer-newsletter-content h2 {
+    text-transform: uppercase;
+    font-family: 'Test Sohne Breit Kraftig';
+}
+
+.app__footer-newsletter-content-input {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.app__footer-newsletter-content-input input {
+    flex: 4;
+    color: var(--color-chineseBlack);
+    background: transparent;
+    padding: 1rem 0.5rem;
+    border: 1px solid var(--color-chineseBlack);
+}
+
+.app__footer-newsletter-content-input button {
+    flex: 1;
+    background: var(--color-maximumYellow);
+    font-family: 'Test Sohne Mono Kraftig';
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.app__footer-newsletter-content-input button:hover {
+    box-shadow: 0 3px 12px var(--color-chineseBlack);
+    transform: translateX(-1%) translateY(-1%);
+}
+
+.app__footer-newsletter-content p {
+    font-family: 'Test Sohne Buch';
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.app__footer-newsletter-content a {
+    text-decoration: underline;
+}

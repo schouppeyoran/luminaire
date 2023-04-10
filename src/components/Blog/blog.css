@@ -54,7 +54,7 @@
     flex-direction: column;
     gap: 2rem;
     flex: 1;
-    width: 25%;
+    width: 25vw;
     margin-left: 1rem;
 }
 
@@ -120,6 +120,7 @@
     font-size: 12px;
     line-height: 16px;
     padding: 0 0.5rem;
+    margin-left: 0;
 }
 
 .app__blog-item-tags h1:first-child {
