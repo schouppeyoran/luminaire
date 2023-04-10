@@ -151,3 +151,31 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 1150px) {
+    .app__footer-newsletter-img-left,
+    .app__footer-newsletter-img-right {
+        width: 15%;
+    }
+
+    .app__footer-newsletter-content {
+        width: 70%;
+    }
+
+    .app__footer-newsletter-img-left img,
+    .app__footer-newsletter-img-right img {
+        width: 320%;
+    }
+
+    .app__footer-newsletter-content-input {
+        width: 70%;
+    }
+
+    .app__footer-links {
+        gap: 0.7rem;
+    }
+
+    .app__footer-disclaimer {
+        gap: 0.8rem;
+    }
+}

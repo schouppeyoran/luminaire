@@ -183,3 +183,42 @@
         width: calc(45% - 2rem);
     }
 }
+
+@media screen and (max-width: 1150px) {
+    .app__features-heading {
+        width: 70%;
+    }
+
+    .app__features-subContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app__features-item1 {
+        width: 75%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .app__features-item-expandButton {
+        justify-content: center;
+    }
+
+    .app__features-item2 {
+        width: 75%;
+        margin-top: 2rem;
+    }
+
+    .app__features-item3 {
+        margin-top: 2rem;
+    }
+
+    .app__features-item3-content {
+        padding: 3rem 0;
+        gap: 1rem;
+    }
+
+    .app__features-item3-img {
+        width: 50%;
+    }
+}

@@ -171,3 +171,22 @@
 .app__blog-items-scroll-right {
     right: 10%;
 }
+
+@media screen and (max-width: 1150px) {
+    .app__blog-container {
+        padding: 2rem 0;
+    }
+
+    .app__blog-items {
+        gap: 1.5rem;
+    }
+
+    .app__blog-item {
+        width: 33vw;
+    }
+
+    .app__blog-item-img {
+        width: 33vw;
+        height: 33vw;
+    }
+}

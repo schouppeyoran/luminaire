@@ -34,10 +34,6 @@
     letter-spacing: 0.02em;
 }
 
-.app__hero-left h3 {
-
-}
-
 .app__hero-left a {
     color: var(--color-chineseBlack);
     margin-bottom: 6rem;
@@ -123,5 +119,19 @@
 
     .app__hero-right {
         padding-right: 8rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__hero-right {
+        display: none;
+    }
+
+    .app__hero-left {
+        border-right: none;
+        text-align: center;
+        padding: 0;
+        align-items: center;
+        gap: 1rem;
     }
 }
